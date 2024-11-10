@@ -1,8 +1,12 @@
 cff-version: 1.0.0
 message: "If you use this device, please cite it as below."
 authors:
-- family-names: "Strakovsky"
-  given-names: "Dima"
+- family-names: "Cooley Hidecker"
+  given-names: "Mary Jo"
+- family-names: "Kitzman"
+  given-names: "Patrick"
+- family-names: "Smith"
+  given-names: "Hannah"
 title: "Creative Link Two Part Switch"
 version: 1.0.0
 date-released: 2024-10-21
