@@ -1,6 +1,6 @@
 # two-part-switch
 ![Printed](https://github.com/Creative-Link-for-Digital-Health/two-part-switch/blob/main/assets/PrintedSwitch.png).
-![Digital](https://github.com/Creative-Link-for-Digital-Health/two-part-switch/blob/main/assets/DigitalSwitch.jpg).
+![Digital](https://github.com/Creative-Link-for-Digital-Health/two-part-switch/blob/main/assets/digital_switch.jpg).
 ## Setup ##
 *Hyperlink/Button to Youtube Tutorial*
 1) Thread wire through hole of the 'mount'
