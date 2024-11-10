@@ -1,5 +1,5 @@
 # two-part-switch
-![Printed](https://github.com/Creative-Link-for-Digital-Health/two-part-switch/blob/main/PrintedSwitch.png).
+![Printed](https://github.com/Creative-Link-for-Digital-Health/two-part-switch/blob/main/assets/PrintedSwitch.png).
 ![Digital](https://github.com/Creative-Link-for-Digital-Health/two-part-switch/blob/main/assets/DigitalSwitch.jpg).
 ## Setup ##
 *Hyperlink/Button to Youtube Tutorial*
