@@ -1,7 +1,7 @@
-Bill of Materials,,
-Item:,Amount:,Cost/Vendor:
-Tactile Tact Push Button,1,Octopart
-Open End TRS,1,Octopart
+Bill of Materials,,,
+Item:,Amount:, Source:, Link:
+Tactile Tact Push Button,1,Octopart, https://octopart.com/search?q=SS-3GP
+Open End TRS,1,Amazon, https://www.amazon.com/Fancasee-Replacement-Connector-Headphone-Earphone/dp/B082VVWND3
 Switch_Bottom_Screw,1,Print
 Switch_Top_Screw,1,Print
 Switch_Button,1,Print
