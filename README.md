@@ -13,16 +13,16 @@
 ## Citation
 Use the following to cite Creative Link For Digital Health Two Part Switch:
 
-- Cooley Hidecker M J, Kitzman P, Smith H,
+- Smith H, Cooley Hidecker M J, Kitzman P,
   **Creative Link**, 2024-,
   https://github.com/Creative-Link-for-Digital-Health/two-part-switch/ [Online; accessed ```<year>-<month>-<day>```].
 
 ```latex
 @Misc{,
-  author = {Mary Jo Cooley Hidecker and Patrick Kitzman and Hannah Smith},
+  author = {Hannah Smith and Mary Jo Cooley Hidecker and Patrick Kitzman},
   title = {Creative Link for Digital Health: Mechanical Switch},
   year = {2024--},
-  url = "[https://github.com/Creative-Link-for-Digital-Health/two-part-switch/](https://github.com/Creative-Link-for-Digital-Health/creative-link-mechanical-switch)",
+  url = "https://github.com/Creative-Link-for-Digital-Health/two-part-switch/",
   note = {[Online; accessed <today>]}
 }
 ```
