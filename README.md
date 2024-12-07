@@ -1,4 +1,4 @@
-# two-part-switch
+# Creative Link Mechanical Switch (CLMS)
 ![Printed](https://github.com/Creative-Link-for-Digital-Health/two-part-switch/blob/main/assets/printed_switch.png).
 ![Digital](https://github.com/Creative-Link-for-Digital-Health/two-part-switch/blob/main/assets/digital_switch.jpg).
 ## Setup ##
@@ -20,9 +20,9 @@ Use the following to cite Creative Link For Digital Health Two Part Switch:
 ```latex
 @Misc{,
   author = {Mary Jo Cooley Hidecker and Patrick Kitzman and Hannah Smith},
-  title = {Creative Link for Digital Health Two Part Switch},
+  title = {Creative Link for Digital Health: Mechanical Switch},
   year = {2024--},
-  url = "https://github.com/Creative-Link-for-Digital-Health/two-part-switch/",
+  url = "[https://github.com/Creative-Link-for-Digital-Health/two-part-switch/](https://github.com/Creative-Link-for-Digital-Health/creative-link-mechanical-switch)",
   note = {[Online; accessed <today>]}
 }
 ```
