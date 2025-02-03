@@ -26,3 +26,4 @@ Use the following to cite Creative Link For Digital Health Two Part Switch:
   note = {[Online; accessed <today>]}
 }
 ```
+This project was developed with support from the [University of Kentucky Office of the Vice President for Research](https://www.research.uky.edu/vice-president-research) Emerging Themes for Research Program – [Creative Link for Advancing Digital Health](https://creative.ai.uky.edu/).
