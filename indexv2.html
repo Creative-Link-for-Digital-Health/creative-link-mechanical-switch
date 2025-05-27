@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Link Mechanical Switch</title>
+  <style>
+    @font-face {
+      font-family: 'Sugo Pro Display ExtraLight';
+      src: url('https://creative-link-branding.s3.amazonaws.com/SugoProDisplay-ExtraLight.woff2') format('woff2');
+      font-weight: 200;
+    }
+    @font-face {
+      font-family: 'Saya FY W04 Black';
+      src: url('https://creative-link-branding.s3.amazonaws.com/SayaFYW04-Black.woff2') format('woff2');
+      font-weight: 900;
+    }
+
+    :root {
+      --primary: #0033A0;
+      --accent: #1E8AFF;
+      --neutral: #DCDDDE;
+      --bg: #f0f4f8;
+      --font-main: 'Sugo Pro Display ExtraLight', sans-serif;
+      --font-header: 'Saya FY W04 Black', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-main);
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: #1B365D;
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 2rem 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-family: var(--font-header);
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .version {
+      font-size: 1rem;
+      margin-top: 0.25rem;
+      color: #cce2ff;
+    }
+
+    .container {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .product-image {
+      max-width: 700px;
+      border-radius: 12px;
+      display: block;
+      margin: 2rem auto;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      border-left: 4px solid var(--primary);
+      padding-left: 0.5rem;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .print-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .downloads-container {
+      flex: 2;
+    }
+
+    .buttons-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card {
+      padding: 1.5rem;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+
+    button {
+      padding: 0.8rem 1rem;
+      border: none;
+      background: var(--accent);
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #0072e0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: var(--neutral);
+      font-size: 0.9rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+    }
+
+    th {
+      background: #daeaf6;
+      font-weight: bold;
+    }
+
+    tr:nth-child(even) td {
+      background: #f8fafd;
+    }
+
+    ul.download-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    ul.download-list li {
+      background: white;
+      border: 1px solid #ccc;
+      padding: 0.75rem;
+      margin: 0.4rem 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+      transition: box-shadow 0.2s;
+    }
+
+    ul.download-list li:hover {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    ul.download-list li a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .logo-wrapper {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        transform: none;
+      }
+      .responsive-logo {
+        height: 60px;
+      }
+    }
+
+    .logo-wrapper {
+      position: absolute;
+      top: 50%;
+      left: -150px;
+      transform: translateY(-50%);
+    }
+
+    .responsive-logo {
+      height: 100px;
+    }
+
+    /* Fade-in Animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="max-width: 1000px; margin: auto; padding: 1rem 1rem 0.5rem 1rem; position: relative;">
+      <div class="logo-wrapper">
+        <img src="https://raw.githubusercontent.com/Creative-Link-for-Digital-Health/Creative-Link-Branding/main/logo_for_social_media_300X300.png" alt="Creative Link Logo" class="responsive-logo">
+      </div>
+      <div style="text-align: center;">
+        <h1 style="font-size: 2.5rem; font-family: var(--font-header); margin: 0;">Creative Link Mechanical Switch</h1>
+        <div class="version" style="color: #cce2ff; font-size: 1rem; margin-top: 0.25rem;">Version 1</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container fade-in">
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; column-gap: 1.00rem; margin-bottom: 2rem;">
+      <img src="https://raw.githubusercontent.com/Creative-Link-for-Digital-Health/creative-link-mechanical-switch/main/assets/printed_switch.png" alt="Creative Link Mechanical Switch" class="product-image" style="margin: 0;">
+      <img src="https://raw.githubusercontent.com/Creative-Link-for-Digital-Health/creative-link-mechanical-switch/main/assets/digital_switch.jpg" alt="Digital Switch Alternate" class="product-image" style="max-width: 600px; margin: 0;">
+    </div>
+    <p>A mechanical switch designed for accessibility and ease of integration in digital health applications.</p>
+
+    <h2>BOM (Bill of Materials)</h2>
+    <div id="bom-table">Loading BOM...</div>
+
+    <h2>Printing Details</h2>
+    <table>
+      <tr><th>Material</th><td>PLA</td></tr>
+      <tr><th>Layer Height</th><td>0.2 mm</td></tr>
+      <tr><th>Nozzle Temperature</th><td>210°C</td></tr>
+      <tr><th>Bed Temperature</th><td>60°C</td></tr>
+      <tr><th>Infill</th><td>20%</td></tr>
+    </table>
+    <p>Download STL files and instructions for 3D printing the components below.</p>
+
+    <div class="print-section">
+      <div class="downloads-container card">
+        <h3>Downloads</h3>
+        <ul class="download-list" id="stl-list"></ul>
+        <details style="margin-top: 1rem;">
+          <summary style="font-size: 0.9rem; color: gray; cursor: pointer;">Editable Files</summary>
+          <ul class="download-list" id="other-list"></ul>
+        </details>
+      </div>
+      <div class="buttons-container">
+        <button onclick="location.href='assembly-guide.html'">Assembly Guide</button>
+        <button onclick="location.href='https://github.com/Creative-Link-for-Digital-Health/creative-link-mechanical-switch'">GitHub Repo</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Authors / Contributors: Creative Link for Digital Health Team<br>
+    <span id="updated-date">Updated on: Loading...</span>
+  </footer>
+
+  <script>
+    fetch('https://raw.githubusercontent.com/Creative-Link-for-Digital-Health/creative-link-mechanical-switch/main/parts/BOM.csv')
+      .then(response => response.text())
+      .then(text => {
+        const rows = text.trim().split('\n').map(row => row.split(','));
+        const table = document.createElement('table');
+        rows.forEach((row, i) => {
+          const tr = document.createElement('tr');
+          row.forEach(cell => {
+            const el = document.createElement(i === 0 ? 'th' : 'td');
+            el.textContent = cell;
+            tr.appendChild(el);
+          });
+          table.appendChild(tr);
+        });
+        document.getElementById('bom-table').innerHTML = '';
+        document.getElementById('bom-table').appendChild(table);
+      });
+
+    fetch('https://api.github.com/repos/Creative-Link-for-Digital-Health/creative-link-mechanical-switch/contents/parts')
+      .then(response => response.json())
+      .then(files => {
+        const stlList = document.getElementById('stl-list');
+        const otherList = document.getElementById('other-list');
+        stlList.innerHTML = '';
+        otherList.innerHTML = '';
+        files.forEach(file => {
+          if (file.type === 'file') {
+            const li = document.createElement('li');
+            const link = document.createElement('a');
+            link.href = file.html_url;
+            link.textContent = file.name;
+            link.target = '_blank';
+            li.appendChild(link);
+            if (file.name.endsWith('.stl')) {
+              stlList.appendChild(li);
+            } else {
+              otherList.appendChild(li);
+            }
+          }
+        });
+      })
+      .catch(error => {
+        document.getElementById('stl-list').innerHTML = '<li>Error loading files.</li>';
+        console.error('GitHub API error:', error);
+      });
+
+    fetch('https://api.github.com/repos/Creative-Link-for-Digital-Health/creative-link-mechanical-switch')
+      .then(response => response.json())
+      .then(repo => {
+        const updated = new Date(repo.pushed_at);
+        document.getElementById('updated-date').textContent = `Updated on: ${updated.toDateString()}`;
+      });
+  </script>
+</body>
+</html>
