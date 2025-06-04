@@ -237,13 +237,8 @@
     <div id="bom-table">Loading BOM...</div>
 
     <h2>Printing Details</h2>
-    <table>
-      <tr><th>Material</th><td>PLA</td></tr>
-      <tr><th>Layer Height</th><td>0.2 mm</td></tr>
-      <tr><th>Nozzle Temperature</th><td>210°C</td></tr>
-      <tr><th>Bed Temperature</th><td>60°C</td></tr>
-      <tr><th>Infill</th><td>20%</td></tr>
-    </table>
+    <div id="settings-table">Loading Settings...</div>
+    
     <p>Download STL files and instructions for 3D printing the components below.</p>
 
     <div class="print-section">
@@ -285,7 +280,26 @@
         document.getElementById('bom-table').innerHTML = '';
         document.getElementById('bom-table').appendChild(table);
       });
+    
+    fetch('https://raw.githubusercontent.com/Creative-Link-for-Digital-Health/creative-link-mechanical-switch/main/parts/printer_settings.csv')
+      .then(response => response.text())
+      .then(text => {
+        const rows = text.trim().split('\n').map(row => row.split(','));
+        const table = document.createElement('table');
+        rows.forEach((row, i) => {
+          const tr = document.createElement('tr');
+          row.forEach(cell => {
+            const el = document.createElement(i === 0 ? 'th' : 'td');
+            el.textContent = cell;
+            tr.appendChild(el);
+          });
+          table.appendChild(tr);
+        });
+        document.getElementById('settings-table').innerHTML = '';
+        document.getElementById('settings-table').appendChild(table);
+      });
 
+    
     fetch('https://api.github.com/repos/Creative-Link-for-Digital-Health/creative-link-mechanical-switch/contents/parts')
       .then(response => response.json())
       .then(files => {
